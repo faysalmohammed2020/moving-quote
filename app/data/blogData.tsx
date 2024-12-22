@@ -17,7 +17,7 @@ export const serviceBlogTitle = [
         make the process smooth and efficient. Our advanced tracking systems and customer support ensure transparency 
         and peace of mind. Choose us to transform your long-distance move into a seamless and hassle-free journey.
       `,
-      image: "/image/truck.jpg", // Add image URL here
+      image: "/image/truck.jpg", 
     },
     {
       id: 102,
