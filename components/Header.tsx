@@ -4,140 +4,153 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
+import { serviceBlogTitle } from "@/app/data/blogData";
 
 const HeaderMenu: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md  ">
-      <nav className="container mx-auto flex items-center justify-between py-2 px-2">
-        <div className="text-white text-xl font-bold">
-          <Link href="/">
-          <Image
+    <header className="bg-white shadow-md  text-black">
+  <nav className="container  flex items-center justify-between py-4 px-6">
+    {/* Logo Section */}
+    <div className="text-xl font-bold">
+      <Link href="/">
+        <Image
           src="/image/logo-png.png"
-          width= {200}
-          alt="Moving Quote New York"
+          width={200}
           height={200}
-          />
-          </Link>
-        </div>
+          alt="Moving Quote New York"
+        />
+      </Link>
+    </div>
 
-        <div className="md:hidden">
-          <button
-            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-gray-600"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </button>
-        </div>
+    {/* Hamburger Menu for Mobile */}
+    <div className="md:hidden">
+      <button
+        onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+        className="text-black"
+      >
+        {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+      </button>
+    </div>
 
-        <ul className="hidden mx-auto md:flex items-center space-x-6 text-lg text-black">
-        <li>
-            <Link href="/Home">Home</Link>
+    {/* Desktop Navigation */}
+    <ul className="hidden mx-auto md:flex items-center space-x-6 text-lg">
+      {/* Home */}
+      <li>
+        <Link href="/home" className="hover:text-orange-400">
+          Home
+        </Link>
+      </li>
+
+      {/* Services Dropdown */}
+      <li className="group relative">
+        <div className="flex items-center cursor-pointer hover:text-orange-400">
+          <span>Services</span>
+          <ChevronDown className="ml-2 w-4 h-4" />
+        </div>
+        <ul className="absolute left-0 mt-2 w-64 bg-gray-700 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-200 invisible">
+          <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+            <Link href="/services/long-distance-moving">Long Distance Moving</Link>
           </li>
-          <li className="group relative">
+          <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+            <Link href="/services/auto-transport">Auto Transport</Link>
+          </li>
+          <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+            <Link href="/services/storage-solutions">Storage Solutions</Link>
+          </li>
+          <li className="group relative px-4 py-2 hover:bg-gray-700 hover:text-orange-400">
             <div className="flex items-center cursor-pointer">
-              <span>Services</span>
-              <ChevronDown className="ml-2 w-4 h-4 text-white-600 group-hover:text-white" />
+              <Link href="/services/commercial-moving">Commercial Moving</Link>
+              <ChevronDown className="ml-2 w-4 h-4" />
             </div>
-            <ul className="absolute left-0 mt-2 w-64 bg-white text-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-100 invisible h-48 overflow-y-auto">
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/services/long-distance-moving">
-                  Long Distance Moving
+            {/* Nested Dropdown */}
+            <ul className="absolute left-full top-0 mt-0 w-64 bg-gray-700 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-200 invisible">
+              <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+                <Link href="/services/commercial-moving/office-relocation">
+                  Office Relocation
                 </Link>
               </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/services/auto-transport">Auto Transport</Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/services/storage-solutions">
-                  Storage Solutions
+              <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+                <Link href="/services/commercial-moving/retail-relocation">
+                  Retail Relocation
                 </Link>
               </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/services/commercial-moving">
-                  Commercial Moving
-                </Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/services/corporate-relocation">
+              <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+                <Link href="/services/commercial-moving/corporate-relocation">
                   Corporate Relocation
                 </Link>
               </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/services/specialized-moving">
-                  Specialized Moving
-                </Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/services/small-moves">Small Moves</Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/services/moving-box">Moving Box</Link>
-              </li>
             </ul>
           </li>
-
-          <li className="group relative">
-            <div className="flex items-center cursor-pointer">
-              <span>About Us</span>
-              <ChevronDown className="ml-2 w-4 h-4 text-black group-hover:text-gray-900" />
-            </div>
-            <ul className="absolute left-0 mt-2 w-48 bg-white text-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-200 invisible">
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/about-us/testimonials">Testimonials</Link>
-              </li>
-            </ul>
+          <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+            <Link href="/services/specialized-moving">Specialized Moving</Link>
           </li>
-
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-
-          <li className="group relative">
-            <div className="flex items-center cursor-pointer">
-              <span>Blog</span>
-              <ChevronDown className="ml-2 w-4 h-4 text-black group-hover:text-gray-900" />
-            </div>
-            <ul className="absolute left-0 mt-2 w-32 bg-white text-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-200 invisible h-48 overflow-y-auto">
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/blog/title-1">Title 1</Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/blog/title-2">Title 2</Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/blog/title-3">Title 3</Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-blue-600">
-                <Link href="/blog/title-4">Title 4</Link>
-              </li>
-            </ul>
+          <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+            <Link href="/services/small-moves">Small Moves</Link>
           </li>
         </ul>
+      </li>
 
-        {isMobileMenuOpen && (
-          <ul className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col text-lg md:hidden">
-            <li className="px-4 py-2 border-b">
-              <Link href="/services">Services</Link>
-            </li>
-            <li className="px-4 py-2 border-b">
-              <Link href="/about-us/testimonials">About Us</Link>
-            </li>
-            <li className="px-4 py-2 border-b">
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li className="px-4 py-2 border-b">
-              <Link href="/blog">Blog</Link>
-            </li>
-          </ul>
-        )}
-      </nav>
-    </header>
+      {/* About Us Dropdown */}
+      <li className="group relative">
+        <div className="flex items-center cursor-pointer hover:text-orange-400">
+          <span>About Us</span>
+          <ChevronDown className="ml-2 w-4 h-4" />
+        </div>
+        <ul className="absolute left-0 mt-2 w-48 bg-gray-700 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-200 invisible">
+          <li className="px-4 py-2 hover:bg-gray-900 hover:text-orange-400">
+            <Link href="/about-us/testimonials">Testimonials</Link>
+          </li>
+        </ul>
+      </li>
+
+      {/* Contact */}
+      <li>
+        <Link href="/contact" className="hover:text-orange-400">
+          Contact
+        </Link>
+      </li>
+
+      {/* Blog Dropdown */}
+      <li className="group relative">
+        <div className="flex items-center cursor-pointer hover:text-orange-400">
+          <span>Blog</span>
+          <ChevronDown className="ml-2 w-4 h-4" />
+        </div>
+        <ul className="absolute left-0 mt-4 w-96 bg-gray-700 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-200 invisible grid grid-cols-2 gap-4 p-4 overflow-y-auto">
+          {serviceBlogTitle.map((category) => (
+            <li key={category.id} className="hover:bg-gray-900 hover:text-orange-400">
+              <Link href={`/blogs/${category.category}`}>{category.title}</Link>
+            </li> 
+          ))}
+        </ul>
+      </li>
+    </ul>
+
+    {/* Mobile Menu */}
+    {isMobileMenuOpen && (
+      <ul className="absolute top-16 left-0 w-full bg-gray-800 shadow-lg flex flex-col text-lg text-white">
+        <li className="px-4 py-2 border-b hover:bg-gray-700 hover:text-orange-400">
+          <Link href="/home">Home</Link>
+        </li>
+        <li className="px-4 py-2 border-b hover:bg-gray-700 hover:text-orange-400">
+          <Link href="/services">Services</Link>
+        </li>
+        <li className="px-4 py-2 border-b hover:bg-gray-700 hover:text-orange-400">
+          <Link href="/about-us/testimonials">About Us</Link>
+        </li>
+        <li className="px-4 py-2 border-b hover:bg-gray-700 hover:text-orange-400">
+          <Link href="/contact">Contact</Link>
+        </li>
+        <li className="px-4 py-2 border-b hover:bg-gray-700 hover:text-orange-400">
+          <Link href="/blog">Blog</Link>
+        </li>
+      </ul>
+    )}
+  </nav>
+</header>
+
   );
 };
 

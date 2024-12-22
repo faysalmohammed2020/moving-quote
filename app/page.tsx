@@ -1,21 +1,21 @@
-// import Footer from "@/components/Footer";
-// import HeaderMenu from "@/components/Header";
+import BlogSection from "@/components/Home/blog";
+import HeroSection from "@/components/Home/Hero";
+import ServiceSection from "@/components/Home/service";
+import SubscriptionSection from "@/components/Home/subscription";
+import TestimonialsSection from "@/components/Home/testimonials";
+import VideoSection from "@/components/Home/video";
 
-import BlogSection from "@/components/blog";
-import HeroSection from "@/components/Hero";
-import ServiceSection from "@/components/service";
-import TestimonialsSection from "@/components/testimonials";
-//import Hero from "@/components/Hero";
-// import HeroSection from "@/components/Hero";
 
 
 const page = () => {
   return (
     <>
-     <HeroSection/>
+    <HeroSection/>
     <ServiceSection/>
      <BlogSection/>
      <TestimonialsSection/>
+     <VideoSection/>
+     <SubscriptionSection/>
       
      
     </>
