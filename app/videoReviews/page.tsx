@@ -1,3 +1,4 @@
+"use client";
 import { videos } from "@/app/data/videoData";
 
 const VideoAll = () => {
