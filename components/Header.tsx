@@ -39,7 +39,7 @@ const HeaderMenu: React.FC = () => {
         <ul className="hidden mx-auto md:flex items-center space-x-6 text-lg">
           {/* Home */}
           <li>
-            <Link href="/home" className="hover:text-orange-400">
+            <Link href="/Home" className="hover:text-orange-400">
               Home
             </Link>
           </li>
@@ -141,7 +141,7 @@ const HeaderMenu: React.FC = () => {
         {isMobileMenuOpen && (
           <ul className="absolute top-16 left-0 w-full bg-gray-800 shadow-lg flex flex-col text-lg text-white">
             <li className="px-4 py-2 border-b hover:bg-gray-700">
-              <Link href="/home">Home</Link>
+              <Link href="/Home">Home</Link>
             </li>
             <li className="px-4 py-2 border-b hover:bg-gray-700">
               <Link href="/services">Services</Link>
