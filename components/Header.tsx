@@ -103,14 +103,14 @@ const HeaderMenu: React.FC = () => {
             </div>
             <ul className="absolute left-0 mt-2 w-48 bg-gray-700 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out invisible">
               <li className="px-4 py-2 hover:bg-gray-900">
-                <Link href="/about-us/testimonials">Testimonials</Link>
+                <Link href="/allTestimonials">Testimonials</Link>
               </li>
             </ul>
           </li>
 
           {/* Contact */}
           <li>
-            <Link href="/contact" className="hover:text-orange-400">
+            <Link href="/Contact" className="hover:text-orange-400">
               Contact
             </Link>
           </li>
@@ -121,12 +121,18 @@ const HeaderMenu: React.FC = () => {
               <span>Blog</span>
               <ChevronDown className="ml-2 w-4 h-4" />
             </div>
-            <ul className="absolute left-0 mt-8 w-96 bg-gray-700 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out invisible grid grid-cols-2 gap-4 p-4 h-48 overflow-y-auto">
+            
+            <ul className="absolute left-0 mt-8  bg-gray-700 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out invisible overflow-y-auto">
+            <div className="bg-orange-500 p-2 text-white">
+                          Total Blog: {postdata.length}
+                        </div>
+              <div className="h-72 w-96 grid grid-cols-2 gap-4 p-4">
               {postdata.map((id) => (
                 <li key={id.ID} className="hover:text-orange-400">
                   <Link href={`/blogs/${id.ID}`}>{id.post_title}</Link>
                 </li>
               ))}
+              </div>
             </ul>
           </li>
         </ul>
