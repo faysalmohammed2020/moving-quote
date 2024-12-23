@@ -5,9 +5,14 @@ import Link from 'next/link';
 // Function to extract the first image's src from the post_content
 const extractFirstImage = (htmlContent: string): string | null => {
   
-  const doc = new DOMParser().parseFromString(htmlContent, "text/html");
-  const imgElement = doc.querySelector("img");
-  return imgElement ? imgElement.getAttribute("src") : null;
+  if (typeof window !== "undefined") {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlContent, "text/html");
+    const imgElement = doc.querySelector("img");
+    return imgElement ? imgElement.getAttribute("src") : "https://via.placeholder.com/400x200";;
+  }
+  return null; 
+  
 };
 
 const BlogSection = () => {
