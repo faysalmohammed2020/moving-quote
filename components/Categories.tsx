@@ -7,10 +7,11 @@ import {
 } from "@/components/ui/accordion";
 import { placeData } from "@/app/data/placeData";
 import { postdata } from "@/app/data/postdata"; // Assuming postdata is in a similar data file
+import Link from "next/link";
 
 const Categories = () => {
   return (
-    <div className="container mx-auto mt-12 px-4">
+    <div className="container mx-auto mt-12 mb-12 px-4">
       <h2 className="text-4xl font-bold text-center text-white mb-8">
         State Categories
       </h2>
@@ -39,9 +40,9 @@ const Categories = () => {
                       key={post.ID}
                       className="mt-2 bg-gray-700 p-2 rounded-md shadow-sm"
                     >
-                      <h4 className="font-bold text-yellow-400">
+                      <Link href={`/blogs/${post.ID}`} className="font-bold text-yellow-400">
                         {post.post_title}
-                      </h4>
+                      </Link>
                     </div>
                   ))}
                 {postdata.filter((post) => post.category?.id === item.id)

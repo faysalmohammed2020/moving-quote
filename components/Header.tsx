@@ -7,9 +7,23 @@ import Image from "next/image";
 //import { serviceBlogTitle } from "@/app/data/blogData";
 import { postdata } from "@/app/data/postdata";
 
-const HeaderMenu: React.FC = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+
+  const HeaderMenu: React.FC = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+  const filteredBlogs = postdata.filter((blog) =>
+    blog.post_title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  const highlightSearchTerm = (text: string, query: string): string => {
+    if (!query) return text; // If no query, return the text as is
+    const regex = new RegExp(`(${query})`, "gi"); // Case-insensitive match
+    return text.replace(
+      regex,
+      (match) => `<span style="color: yellow;">${match}</span>`
+    );
+  };
   return (
     <header className="bg-white shadow-md text-black">
       <nav className="container flex items-center justify-between py-4 px-6">
@@ -118,25 +132,55 @@ const HeaderMenu: React.FC = () => {
           {/* Blog Dropdown */}
           <li className="group relative">
           <div className="flex items-center cursor-pointer hover:text-orange-500">
-            <span className="text-lg">Blog</span>
+          <span className="text-lg">Blog</span>
           <ChevronDown className="ml-2 w-5 h-5 text-gray-300 transition-all duration-300 ease-in-out group-hover:rotate-180" />
-        </div>
-
-          <ul className="absolute left-0 mt-4 bg-gray-800 text-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out invisible overflow-y-auto max-h-96 w-80 p-4">
-          <div className="bg-orange-600 p-2 text-white text-lg font-semibold rounded-md">
-          Total Blogs: {postdata.length}
           </div>
-          <div className="h-auto grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
-            {postdata.map((id) => (
-            <li key={id.ID} className="group hover:bg-orange-500 p-2 rounded-md transition-colors duration-300 ease-in-out">
-              <Link href={`/blogs/${id.ID}`} className="text-sm sm:text-base font-medium text-gray-300 hover:text-white hover:underline">
-              {id.post_title}
-          </Link>
-        </li>
-      ))}
+
+          <ul className="absolute left-0 mt-4 bg-gray-800 text-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out invisible w-96 p-4">
+          <div className="bg-orange-600 w-32 p-2 rounded-full text-white text-sm font-semibold">
+            Total Blogs: {filteredBlogs.length}
+          </div>
+
+    {/* Search Input */}
+    <div className="mt-4 relative">
+  <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+    <span className="text-gray-400 text-lg">🔍</span>
+  </div>
+  <input
+    type="text"
+    placeholder="Search blogs..."
+    value={searchQuery}
+    onChange={(e) => setSearchQuery(e.target.value)}
+    className="w-80 p-3 pl-12 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm border border-gray-600 transition-all duration-300"
+  />
+</div>
+
+    <div className="scrollbar mt-4 space-y-4 ">
+      {filteredBlogs.length > 0 ? (
+        filteredBlogs.map((id) => (
+          <li
+            key={id.ID}
+            className="group p-2 rounded-md bg-slate-700 hover:from-orange-500 hover:to-orange-400 transition-colors duration-300 ease-in-out shadow-md"
+          >
+            <Link
+              href={`/blogs/${id.ID}`}
+              className="text-sm sm:text-base font-medium text-gray-100 hover:underline hover:text-orange-600"
+            >
+              {/* Highlight Matching Letters */}
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: highlightSearchTerm(id.post_title, searchQuery),
+                }}
+              />
+            </Link>
+          </li>
+        ))
+      ) : (
+        <p className="text-gray-300 text-sm">No blogs found.</p>
+      )}
     </div>
   </ul>
-          </li>
+</li>
 
         </ul>
 
