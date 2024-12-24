@@ -6,25 +6,25 @@ const Footer: React.FC = () => {
     <footer className="bg-[#1C1C1C] text-white py-4">
       <div className="container mx-auto text-center">
         <nav className="mb-2">
-          <Link href="/" className="mx-2 hover:underline">
+          <Link href="/Home" className="mx-2 hover:underline">
             Home
           </Link>
           <Link href="/services" className="mx-2 hover:underline">
             Services
           </Link>
-          <Link href="/about-us/testimonials" className="mx-2 hover:underline">
+          <Link href="/allTestimonials" className="mx-2 hover:underline">
             About Us
           </Link>
-          <Link href="/contact" className="mx-2 hover:underline">
+          <Link href="/Contact" className="mx-2 hover:underline">
             Contact
           </Link>
-          <Link href="/blog" className="mx-2 hover:underline">
+          <Link href="/allBlogs" className="mx-2 hover:underline">
             Blog
           </Link>
         </nav>
 
         <p className="text-sm mb-3">
-          © 2024 MovingQuote. All Rights Reserved.
+          &copy; 2024 Desined By Birds of Eden. All Rights Reserved.
         </p>
 
         {/* Social Icons */}

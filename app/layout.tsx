@@ -38,7 +38,9 @@ export default function RootLayout({
         <main className="">
         {children}
         </main>
+        <div className="bg-black">
         <Categories/>
+        </div>
         <Footer/>
        </div>
       </body>

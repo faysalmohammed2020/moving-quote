@@ -117,24 +117,27 @@ const HeaderMenu: React.FC = () => {
 
           {/* Blog Dropdown */}
           <li className="group relative">
-            <div className="flex items-center cursor-pointer hover:text-orange-400">
-              <span>Blog</span>
-              <ChevronDown className="ml-2 w-4 h-4" />
-            </div>
-            
-            <ul className="absolute left-0 mt-8  bg-gray-700 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out invisible overflow-y-auto">
-            <div className="bg-orange-500 p-2 text-white">
-                          Total Blog: {postdata.length}
-                        </div>
-              <div className="h-72 w-96 grid grid-cols-2 gap-4 p-4">
-              {postdata.map((id) => (
-                <li key={id.ID} className="hover:text-orange-400">
-                  <Link href={`/blogs/${id.ID}`}>{id.post_title}</Link>
-                </li>
-              ))}
-              </div>
-            </ul>
+          <div className="flex items-center cursor-pointer hover:text-orange-500">
+            <span className="text-lg">Blog</span>
+          <ChevronDown className="ml-2 w-5 h-5 text-gray-300 transition-all duration-300 ease-in-out group-hover:rotate-180" />
+        </div>
+
+          <ul className="absolute left-0 mt-4 bg-gray-800 text-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out invisible overflow-y-auto max-h-96 w-80 p-4">
+          <div className="bg-orange-600 p-2 text-white text-lg font-semibold rounded-md">
+          Total Blogs: {postdata.length}
+          </div>
+          <div className="h-auto grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+            {postdata.map((id) => (
+            <li key={id.ID} className="group hover:bg-orange-500 p-2 rounded-md transition-colors duration-300 ease-in-out">
+              <Link href={`/blogs/${id.ID}`} className="text-sm sm:text-base font-medium text-gray-300 hover:text-white hover:underline">
+              {id.post_title}
+          </Link>
+        </li>
+      ))}
+    </div>
+  </ul>
           </li>
+
         </ul>
 
         {/* Mobile Menu */}
