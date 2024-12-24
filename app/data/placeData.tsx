@@ -119,8 +119,5 @@ export const placeData = [
         id: 130,
         name: "Oregon",
     },
-    {
-        id: 131,
-        name: "Utah",
-    }
+    
 ];

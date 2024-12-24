@@ -2835,6 +2835,7 @@ export const postdata = [
   {
     ID: "831",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:13:26",
     post_date_gmt: "2024-06-14 04:13:26",
     post_content:
@@ -2863,6 +2864,7 @@ export const postdata = [
   {
     ID: "832",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:15:31",
     post_date_gmt: "2024-06-14 04:15:31",
     post_content:
@@ -2889,6 +2891,7 @@ export const postdata = [
   {
     ID: "833",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:17:10",
     post_date_gmt: "2024-06-14 04:17:10",
     post_content:
@@ -2917,6 +2920,7 @@ export const postdata = [
   {
     ID: "834",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:19:12",
     post_date_gmt: "2024-06-14 04:19:12",
     post_content:
@@ -2943,6 +2947,7 @@ export const postdata = [
   {
     ID: "835",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:21:05",
     post_date_gmt: "2024-06-14 04:21:05",
     post_content:
@@ -2971,6 +2976,7 @@ export const postdata = [
   {
     ID: "836",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:22:50",
     post_date_gmt: "2024-06-14 04:22:50",
     post_content:
@@ -2997,6 +3003,7 @@ export const postdata = [
   {
     ID: "837",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:25:44",
     post_date_gmt: "2024-06-14 04:25:44",
     post_content:
@@ -3023,6 +3030,7 @@ export const postdata = [
   {
     ID: "838",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:27:36",
     post_date_gmt: "2024-06-14 04:27:36",
     post_content:
@@ -3050,6 +3058,7 @@ export const postdata = [
   {
     ID: "839",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 04:30:06",
     post_date_gmt: "2024-06-14 04:30:06",
     post_content:
@@ -3076,6 +3085,7 @@ export const postdata = [
   {
     ID: "840",
     post_author: "1",
+    category: placeData[10],
     post_date: "2024-06-14 05:13:21",
     post_date_gmt: "2024-06-14 05:13:21",
     post_content:
@@ -3102,6 +3112,7 @@ export const postdata = [
   {
     ID: "841",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:16:44",
     post_date_gmt: "2024-06-14 05:16:44",
     post_content:
@@ -3128,6 +3139,7 @@ export const postdata = [
   {
     ID: "842",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:18:31",
     post_date_gmt: "2024-06-14 05:18:31",
     post_content:
@@ -3154,6 +3166,7 @@ export const postdata = [
   {
     ID: "843",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:20:49",
     post_date_gmt: "2024-06-14 05:20:49",
     post_content:
@@ -3180,6 +3193,7 @@ export const postdata = [
   {
     ID: "844",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:23:01",
     post_date_gmt: "2024-06-14 05:23:01",
     post_content:
@@ -3208,6 +3222,7 @@ export const postdata = [
   {
     ID: "845",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:24:51",
     post_date_gmt: "2024-06-14 05:24:51",
     post_content:
@@ -3234,6 +3249,7 @@ export const postdata = [
   {
     ID: "846",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:27:18",
     post_date_gmt: "2024-06-14 05:27:18",
     post_content:
@@ -3261,6 +3277,7 @@ export const postdata = [
   {
     ID: "847",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:29:27",
     post_date_gmt: "2024-06-14 05:29:27",
     post_content:
@@ -3289,6 +3306,7 @@ export const postdata = [
   {
     ID: "848",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:32:46",
     post_date_gmt: "2024-06-14 05:32:46",
     post_content:
@@ -3316,6 +3334,7 @@ export const postdata = [
   {
     ID: "849",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:35:02",
     post_date_gmt: "2024-06-14 05:35:02",
     post_content:
@@ -3344,6 +3363,7 @@ export const postdata = [
   {
     ID: "850",
     post_author: "1",
+    category: placeData[11],
     post_date: "2024-06-14 05:37:25",
     post_date_gmt: "2024-06-14 05:37:25",
     post_content:
@@ -3370,6 +3390,7 @@ export const postdata = [
   {
     ID: "851",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-14 05:39:13",
     post_date_gmt: "2024-06-14 05:39:13",
     post_content:
@@ -3396,6 +3417,7 @@ export const postdata = [
   {
     ID: "858",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 08:59:51",
     post_date_gmt: "2024-06-20 08:59:51",
     post_content:
@@ -3424,6 +3446,7 @@ export const postdata = [
   {
     ID: "859",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 09:01:38",
     post_date_gmt: "2024-06-20 09:01:38",
     post_content:
@@ -3450,6 +3473,7 @@ export const postdata = [
   {
     ID: "860",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 09:05:01",
     post_date_gmt: "2024-06-20 09:05:01",
     post_content:
@@ -3476,6 +3500,7 @@ export const postdata = [
   {
     ID: "861",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 09:15:26",
     post_date_gmt: "2024-06-20 09:15:26",
     post_content:
@@ -3502,6 +3527,7 @@ export const postdata = [
   {
     ID: "862",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 09:16:16",
     post_date_gmt: "2024-06-20 09:16:16",
     post_content:
@@ -3528,6 +3554,7 @@ export const postdata = [
   {
     ID: "863",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 09:17:15",
     post_date_gmt: "2024-06-20 09:17:15",
     post_content:
@@ -3556,6 +3583,7 @@ export const postdata = [
   {
     ID: "864",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 09:18:33",
     post_date_gmt: "2024-06-20 09:18:33",
     post_content:
@@ -3582,6 +3610,7 @@ export const postdata = [
   {
     ID: "865",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 09:19:39",
     post_date_gmt: "2024-06-20 09:19:39",
     post_content:
@@ -3608,6 +3637,7 @@ export const postdata = [
   {
     ID: "866",
     post_author: "1",
+    category: placeData[12],
     post_date: "2024-06-20 09:20:34",
     post_date_gmt: "2024-06-20 09:20:34",
     post_content:
@@ -3636,6 +3666,7 @@ export const postdata = [
   {
     ID: "867",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:21:30",
     post_date_gmt: "2024-06-20 09:21:30",
     post_content:
@@ -3662,6 +3693,7 @@ export const postdata = [
   {
     ID: "868",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:22:20",
     post_date_gmt: "2024-06-20 09:22:20",
     post_content:
@@ -3688,6 +3720,7 @@ export const postdata = [
   {
     ID: "869",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:23:15",
     post_date_gmt: "2024-06-20 09:23:15",
     post_content:
@@ -3716,6 +3749,7 @@ export const postdata = [
   {
     ID: "870",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:24:10",
     post_date_gmt: "2024-06-20 09:24:10",
     post_content:
@@ -3742,6 +3776,7 @@ export const postdata = [
   {
     ID: "871",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:25:03",
     post_date_gmt: "2024-06-20 09:25:03",
     post_content:
@@ -3770,6 +3805,7 @@ export const postdata = [
   {
     ID: "872",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:25:50",
     post_date_gmt: "2024-06-20 09:25:50",
     post_content:
@@ -3798,6 +3834,7 @@ export const postdata = [
   {
     ID: "873",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:26:43",
     post_date_gmt: "2024-06-20 09:26:43",
     post_content:
@@ -3824,6 +3861,7 @@ export const postdata = [
   {
     ID: "874",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:27:29",
     post_date_gmt: "2024-06-20 09:27:29",
     post_content:
@@ -3850,6 +3888,7 @@ export const postdata = [
   {
     ID: "875",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:28:16",
     post_date_gmt: "2024-06-20 09:28:16",
     post_content:
@@ -3876,6 +3915,7 @@ export const postdata = [
   {
     ID: "876",
     post_author: "1",
+    category: placeData[13],
     post_date: "2024-06-20 09:29:19",
     post_date_gmt: "2024-06-20 09:29:19",
     post_content:
@@ -3902,6 +3942,7 @@ export const postdata = [
   {
     ID: "877",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-20 09:30:04",
     post_date_gmt: "2024-06-20 09:30:04",
     post_content:
@@ -3928,6 +3969,7 @@ export const postdata = [
   {
     ID: "878",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-20 09:30:56",
     post_date_gmt: "2024-06-20 09:30:56",
     post_content:
@@ -3954,6 +3996,7 @@ export const postdata = [
   {
     ID: "879",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-20 09:31:46",
     post_date_gmt: "2024-06-20 09:31:46",
     post_content:
@@ -3980,6 +4023,7 @@ export const postdata = [
   {
     ID: "880",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-20 09:32:31",
     post_date_gmt: "2024-06-20 09:32:31",
     post_content:
@@ -4006,6 +4050,7 @@ export const postdata = [
   {
     ID: "881",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-20 09:33:18",
     post_date_gmt: "2024-06-20 09:33:18",
     post_content:
@@ -4032,6 +4077,7 @@ export const postdata = [
   {
     ID: "888",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-21 05:14:18",
     post_date_gmt: "2024-06-21 05:14:18",
     post_content:
@@ -4058,6 +4104,7 @@ export const postdata = [
   {
     ID: "889",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-21 05:15:44",
     post_date_gmt: "2024-06-21 05:15:44",
     post_content:
@@ -4084,6 +4131,7 @@ export const postdata = [
   {
     ID: "890",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-21 05:17:09",
     post_date_gmt: "2024-06-21 05:17:09",
     post_content:
@@ -4110,6 +4158,7 @@ export const postdata = [
   {
     ID: "891",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-21 05:18:29",
     post_date_gmt: "2024-06-21 05:18:29",
     post_content:
@@ -4137,6 +4186,7 @@ export const postdata = [
   {
     ID: "892",
     post_author: "1",
+    category: placeData[14],
     post_date: "2024-06-21 05:20:23",
     post_date_gmt: "2024-06-21 05:20:23",
     post_content:
@@ -4164,6 +4214,7 @@ export const postdata = [
   {
     ID: "893",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:21:51",
     post_date_gmt: "2024-06-21 05:21:51",
     post_content:
@@ -4190,6 +4241,7 @@ export const postdata = [
   {
     ID: "894",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:24:05",
     post_date_gmt: "2024-06-21 05:24:05",
     post_content:
@@ -4216,6 +4268,7 @@ export const postdata = [
   {
     ID: "895",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:25:37",
     post_date_gmt: "2024-06-21 05:25:37",
     post_content:
@@ -4243,6 +4296,7 @@ export const postdata = [
   {
     ID: "896",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:27:03",
     post_date_gmt: "2024-06-21 05:27:03",
     post_content:
@@ -4269,6 +4323,7 @@ export const postdata = [
   {
     ID: "897",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:28:48",
     post_date_gmt: "2024-06-21 05:28:48",
     post_content:
@@ -4295,6 +4350,7 @@ export const postdata = [
   {
     ID: "898",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:30:53",
     post_date_gmt: "2024-06-21 05:30:53",
     post_content:
@@ -4321,6 +4377,7 @@ export const postdata = [
   {
     ID: "899",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:32:11",
     post_date_gmt: "2024-06-21 05:32:11",
     post_content:
@@ -4348,6 +4405,7 @@ export const postdata = [
   {
     ID: "900",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:33:49",
     post_date_gmt: "2024-06-21 05:33:49",
     post_content:
@@ -4375,6 +4433,7 @@ export const postdata = [
   {
     ID: "901",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:35:10",
     post_date_gmt: "2024-06-21 05:35:10",
     post_content:
@@ -4402,6 +4461,7 @@ export const postdata = [
   {
     ID: "902",
     post_author: "1",
+    category: placeData[15],
     post_date: "2024-06-21 05:37:07",
     post_date_gmt: "2024-06-21 05:37:07",
     post_content:
@@ -4428,6 +4488,7 @@ export const postdata = [
   {
     ID: "903",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:38:43",
     post_date_gmt: "2024-06-21 05:38:43",
     post_content:
@@ -4454,6 +4515,7 @@ export const postdata = [
   {
     ID: "904",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:40:14",
     post_date_gmt: "2024-06-21 05:40:14",
     post_content:
@@ -4481,6 +4543,7 @@ export const postdata = [
   {
     ID: "905",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:41:21",
     post_date_gmt: "2024-06-21 05:41:21",
     post_content:
@@ -4507,6 +4570,7 @@ export const postdata = [
   {
     ID: "906",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:42:59",
     post_date_gmt: "2024-06-21 05:42:59",
     post_content:
@@ -4533,6 +4597,7 @@ export const postdata = [
   {
     ID: "907",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:44:10",
     post_date_gmt: "2024-06-21 05:44:10",
     post_content:
@@ -4559,6 +4624,7 @@ export const postdata = [
   {
     ID: "908",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:45:24",
     post_date_gmt: "2024-06-21 05:45:24",
     post_content:
@@ -4586,6 +4652,7 @@ export const postdata = [
   {
     ID: "909",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:47:59",
     post_date_gmt: "2024-06-21 05:47:59",
     post_content:
@@ -4613,6 +4680,7 @@ export const postdata = [
   {
     ID: "910",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:49:15",
     post_date_gmt: "2024-06-21 05:49:15",
     post_content:
@@ -4639,6 +4707,7 @@ export const postdata = [
   {
     ID: "911",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-21 05:50:43",
     post_date_gmt: "2024-06-21 05:50:43",
     post_content:
@@ -4665,6 +4734,7 @@ export const postdata = [
   {
     ID: "916",
     post_author: "1",
+    category: placeData[16],
     post_date: "2024-06-24 04:37:41",
     post_date_gmt: "2024-06-24 04:37:41",
     post_content:
@@ -4691,6 +4761,7 @@ export const postdata = [
   {
     ID: "917",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 04:39:39",
     post_date_gmt: "2024-06-24 04:39:39",
     post_content:
@@ -4718,6 +4789,7 @@ export const postdata = [
   {
     ID: "918",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 04:41:09",
     post_date_gmt: "2024-06-24 04:41:09",
     post_content:
@@ -4745,6 +4817,7 @@ export const postdata = [
   {
     ID: "919",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 04:43:29",
     post_date_gmt: "2024-06-24 04:43:29",
     post_content:
@@ -4771,6 +4844,7 @@ export const postdata = [
   {
     ID: "920",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 04:44:56",
     post_date_gmt: "2024-06-24 04:44:56",
     post_content:
@@ -4797,6 +4871,7 @@ export const postdata = [
   {
     ID: "921",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 04:46:02",
     post_date_gmt: "2024-06-24 04:46:02",
     post_content:
@@ -4824,6 +4899,7 @@ export const postdata = [
   {
     ID: "922",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 04:58:34",
     post_date_gmt: "2024-06-24 04:58:34",
     post_content:
@@ -4851,6 +4927,7 @@ export const postdata = [
   {
     ID: "923",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 05:08:51",
     post_date_gmt: "2024-06-24 05:08:51",
     post_content:
@@ -4877,6 +4954,7 @@ export const postdata = [
   {
     ID: "924",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 05:09:56",
     post_date_gmt: "2024-06-24 05:09:56",
     post_content:
@@ -4904,6 +4982,7 @@ export const postdata = [
   {
     ID: "925",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 05:11:38",
     post_date_gmt: "2024-06-24 05:11:38",
     post_content:
@@ -4930,6 +5009,7 @@ export const postdata = [
   {
     ID: "926",
     post_author: "1",
+    category: placeData[17],
     post_date: "2024-06-24 05:13:03",
     post_date_gmt: "2024-06-24 05:13:03",
     post_content:
@@ -4956,6 +5036,7 @@ export const postdata = [
   {
     ID: "927",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-24 05:14:16",
     post_date_gmt: "2024-06-24 05:14:16",
     post_content:
@@ -4982,6 +5063,7 @@ export const postdata = [
   {
     ID: "940",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-24 06:36:45",
     post_date_gmt: "2024-06-24 06:36:45",
     post_content:
@@ -5008,6 +5090,7 @@ export const postdata = [
   {
     ID: "956",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-25 05:02:22",
     post_date_gmt: "2024-06-25 05:02:22",
     post_content:
@@ -5035,6 +5118,7 @@ export const postdata = [
   {
     ID: "957",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-25 05:05:07",
     post_date_gmt: "2024-06-25 05:05:07",
     post_content:
@@ -5061,6 +5145,7 @@ export const postdata = [
   {
     ID: "958",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-25 05:06:33",
     post_date_gmt: "2024-06-25 05:06:33",
     post_content:
@@ -5087,6 +5172,7 @@ export const postdata = [
   {
     ID: "959",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-25 05:09:07",
     post_date_gmt: "2024-06-25 05:09:07",
     post_content:
@@ -5113,6 +5199,7 @@ export const postdata = [
   {
     ID: "960",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-25 05:10:23",
     post_date_gmt: "2024-06-25 05:10:23",
     post_content:
@@ -5139,6 +5226,7 @@ export const postdata = [
   {
     ID: "961",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-25 05:11:51",
     post_date_gmt: "2024-06-25 05:11:51",
     post_content:
@@ -5166,6 +5254,7 @@ export const postdata = [
   {
     ID: "962",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-25 05:18:42",
     post_date_gmt: "2024-06-25 05:18:42",
     post_content:
@@ -5194,6 +5283,7 @@ export const postdata = [
   {
     ID: "963",
     post_author: "1",
+    category: placeData[18],
     post_date: "2024-06-25 05:24:38",
     post_date_gmt: "2024-06-25 05:24:38",
     post_content:
@@ -5220,6 +5310,7 @@ export const postdata = [
   {
     ID: "964",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 05:29:39",
     post_date_gmt: "2024-06-25 05:29:39",
     post_content:
@@ -5246,6 +5337,7 @@ export const postdata = [
   {
     ID: "965",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 05:44:42",
     post_date_gmt: "2024-06-25 05:44:42",
     post_content:
@@ -5273,6 +5365,7 @@ export const postdata = [
   {
     ID: "966",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 05:46:15",
     post_date_gmt: "2024-06-25 05:46:15",
     post_content:
@@ -5300,6 +5393,7 @@ export const postdata = [
   {
     ID: "967",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 05:47:53",
     post_date_gmt: "2024-06-25 05:47:53",
     post_content:
@@ -5326,6 +5420,7 @@ export const postdata = [
   {
     ID: "974",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 05:58:24",
     post_date_gmt: "2024-06-25 05:58:24",
     post_content:
@@ -5352,6 +5447,7 @@ export const postdata = [
   {
     ID: "975",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 06:03:32",
     post_date_gmt: "2024-06-25 06:03:32",
     post_content:
@@ -5379,6 +5475,7 @@ export const postdata = [
   {
     ID: "976",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 06:04:54",
     post_date_gmt: "2024-06-25 06:04:54",
     post_content:
@@ -5406,6 +5503,7 @@ export const postdata = [
   {
     ID: "977",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 06:06:17",
     post_date_gmt: "2024-06-25 06:06:17",
     post_content:
@@ -5432,6 +5530,7 @@ export const postdata = [
   {
     ID: "978",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 06:07:41",
     post_date_gmt: "2024-06-25 06:07:41",
     post_content:
@@ -5458,6 +5557,7 @@ export const postdata = [
   {
     ID: "979",
     post_author: "1",
+    category: placeData[19],
     post_date: "2024-06-25 06:08:57",
     post_date_gmt: "2024-06-25 06:08:57",
     post_content:
@@ -5485,6 +5585,7 @@ export const postdata = [
   {
     ID: "981",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:38:34",
     post_date_gmt: "2024-06-26 04:38:34",
     post_content:
@@ -5511,6 +5612,7 @@ export const postdata = [
   {
     ID: "982",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:39:47",
     post_date_gmt: "2024-06-26 04:39:47",
     post_content:
@@ -5537,6 +5639,7 @@ export const postdata = [
   {
     ID: "983",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:40:48",
     post_date_gmt: "2024-06-26 04:40:48",
     post_content:
@@ -5564,6 +5667,7 @@ export const postdata = [
   {
     ID: "984",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:42:04",
     post_date_gmt: "2024-06-26 04:42:04",
     post_content:
@@ -5590,6 +5694,7 @@ export const postdata = [
   {
     ID: "985",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:43:18",
     post_date_gmt: "2024-06-26 04:43:18",
     post_content:
@@ -5616,6 +5721,7 @@ export const postdata = [
   {
     ID: "986",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:44:46",
     post_date_gmt: "2024-06-26 04:44:46",
     post_content:
@@ -5643,6 +5749,7 @@ export const postdata = [
   {
     ID: "987",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:55:23",
     post_date_gmt: "2024-06-26 04:55:23",
     post_content:
@@ -5670,6 +5777,7 @@ export const postdata = [
   {
     ID: "988",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:56:40",
     post_date_gmt: "2024-06-26 04:56:40",
     post_content:
@@ -5696,6 +5804,7 @@ export const postdata = [
   {
     ID: "989",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:57:57",
     post_date_gmt: "2024-06-26 04:57:57",
     post_content:
@@ -5724,6 +5833,7 @@ export const postdata = [
   {
     ID: "990",
     post_author: "1",
+    category: placeData[20],
     post_date: "2024-06-26 04:59:02",
     post_date_gmt: "2024-06-26 04:59:02",
     post_content:
@@ -5750,6 +5860,7 @@ export const postdata = [
   {
     ID: "991",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:00:12",
     post_date_gmt: "2024-06-26 05:00:12",
     post_content:
@@ -5777,6 +5888,7 @@ export const postdata = [
   {
     ID: "992",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:01:29",
     post_date_gmt: "2024-06-26 05:01:29",
     post_content:
@@ -5803,6 +5915,7 @@ export const postdata = [
   {
     ID: "993",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:13:06",
     post_date_gmt: "2024-06-26 05:13:06",
     post_content:
@@ -5829,6 +5942,7 @@ export const postdata = [
   {
     ID: "994",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:14:38",
     post_date_gmt: "2024-06-26 05:14:38",
     post_content:
@@ -5855,6 +5969,7 @@ export const postdata = [
   {
     ID: "995",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:16:00",
     post_date_gmt: "2024-06-26 05:16:00",
     post_content:
@@ -5881,6 +5996,7 @@ export const postdata = [
   {
     ID: "996",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:17:17",
     post_date_gmt: "2024-06-26 05:17:17",
     post_content:
@@ -5908,6 +6024,7 @@ export const postdata = [
   {
     ID: "997",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:18:26",
     post_date_gmt: "2024-06-26 05:18:26",
     post_content:
@@ -5934,6 +6051,7 @@ export const postdata = [
   {
     ID: "998",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:19:34",
     post_date_gmt: "2024-06-26 05:19:34",
     post_content:
@@ -5960,6 +6078,7 @@ export const postdata = [
   {
     ID: "999",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:31:26",
     post_date_gmt: "2024-06-26 05:31:26",
     post_content:
@@ -5986,6 +6105,7 @@ export const postdata = [
   {
     ID: "1000",
     post_author: "1",
+    category: placeData[21],
     post_date: "2024-06-26 05:32:44",
     post_date_gmt: "2024-06-26 05:32:44",
     post_content:
@@ -6012,6 +6132,7 @@ export const postdata = [
   {
     ID: "1001",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-26 05:33:57",
     post_date_gmt: "2024-06-26 05:33:57",
     post_content:
@@ -6038,6 +6159,7 @@ export const postdata = [
   {
     ID: "1002",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-26 05:35:04",
     post_date_gmt: "2024-06-26 05:35:04",
     post_content:
@@ -6064,6 +6186,7 @@ export const postdata = [
   {
     ID: "1003",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-26 05:36:22",
     post_date_gmt: "2024-06-26 05:36:22",
     post_content:
@@ -6090,6 +6213,7 @@ export const postdata = [
   {
     ID: "1004",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-26 05:39:52",
     post_date_gmt: "2024-06-26 05:39:52",
     post_content:
@@ -6116,6 +6240,7 @@ export const postdata = [
   {
     ID: "1006",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-27 06:53:10",
     post_date_gmt: "2024-06-27 06:53:10",
     post_content:
@@ -6142,6 +6267,7 @@ export const postdata = [
   {
     ID: "1007",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-27 06:54:14",
     post_date_gmt: "2024-06-27 06:54:14",
     post_content:
@@ -6168,6 +6294,7 @@ export const postdata = [
   {
     ID: "1008",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-27 06:55:26",
     post_date_gmt: "2024-06-27 06:55:26",
     post_content:
@@ -6195,6 +6322,7 @@ export const postdata = [
   {
     ID: "1009",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-27 06:56:26",
     post_date_gmt: "2024-06-27 06:56:26",
     post_content:
@@ -6221,6 +6349,7 @@ export const postdata = [
   {
     ID: "1010",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-27 06:57:37",
     post_date_gmt: "2024-06-27 06:57:37",
     post_content:
@@ -6247,6 +6376,7 @@ export const postdata = [
   {
     ID: "1011",
     post_author: "1",
+    category: placeData[22],
     post_date: "2024-06-27 06:59:14",
     post_date_gmt: "2024-06-27 06:59:14",
     post_content:
@@ -6273,6 +6403,7 @@ export const postdata = [
   {
     ID: "1012",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-27 07:00:20",
     post_date_gmt: "2024-06-27 07:00:20",
     post_content:
@@ -6299,6 +6430,7 @@ export const postdata = [
   {
     ID: "1013",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-27 07:01:35",
     post_date_gmt: "2024-06-27 07:01:35",
     post_content:
@@ -6325,6 +6457,7 @@ export const postdata = [
   {
     ID: "1014",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-27 07:02:35",
     post_date_gmt: "2024-06-27 07:02:35",
     post_content:
@@ -6352,6 +6485,7 @@ export const postdata = [
   {
     ID: "1015",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-27 07:03:28",
     post_date_gmt: "2024-06-27 07:03:28",
     post_content:
@@ -6379,6 +6513,7 @@ export const postdata = [
   {
     ID: "1016",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-27 07:04:43",
     post_date_gmt: "2024-06-27 07:04:43",
     post_content:
@@ -6405,6 +6540,7 @@ export const postdata = [
   {
     ID: "1041",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-28 04:58:41",
     post_date_gmt: "2024-06-28 04:58:41",
     post_content:
@@ -6432,6 +6568,7 @@ export const postdata = [
   {
     ID: "1042",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-28 04:59:43",
     post_date_gmt: "2024-06-28 04:59:43",
     post_content:
@@ -6459,6 +6596,7 @@ export const postdata = [
   {
     ID: "1043",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-28 05:02:56",
     post_date_gmt: "2024-06-28 05:02:56",
     post_content:
@@ -6486,6 +6624,7 @@ export const postdata = [
   {
     ID: "1044",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-28 05:04:07",
     post_date_gmt: "2024-06-28 05:04:07",
     post_content:
@@ -6512,6 +6651,7 @@ export const postdata = [
   {
     ID: "1045",
     post_author: "1",
+    category: placeData[23],
     post_date: "2024-06-28 05:05:26",
     post_date_gmt: "2024-06-28 05:05:26",
     post_content:
@@ -6538,6 +6678,7 @@ export const postdata = [
   {
     ID: "1046",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-06-28 05:06:37",
     post_date_gmt: "2024-06-28 05:06:37",
     post_content:
@@ -6564,6 +6705,7 @@ export const postdata = [
   {
     ID: "1048",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 04:59:22",
     post_date_gmt: "2024-07-01 04:59:22",
     post_content:
@@ -6590,6 +6732,7 @@ export const postdata = [
   {
     ID: "1049",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 05:00:34",
     post_date_gmt: "2024-07-01 05:00:34",
     post_content:
@@ -6617,6 +6760,7 @@ export const postdata = [
   {
     ID: "1050",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 05:01:51",
     post_date_gmt: "2024-07-01 05:01:51",
     post_content:
@@ -6643,6 +6787,7 @@ export const postdata = [
   {
     ID: "1051",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 05:03:17",
     post_date_gmt: "2024-07-01 05:03:17",
     post_content:
@@ -6670,6 +6815,7 @@ export const postdata = [
   {
     ID: "1052",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 05:04:40",
     post_date_gmt: "2024-07-01 05:04:40",
     post_content:
@@ -6696,6 +6842,7 @@ export const postdata = [
   {
     ID: "1053",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 05:06:24",
     post_date_gmt: "2024-07-01 05:06:24",
     post_content:
@@ -6723,6 +6870,7 @@ export const postdata = [
   {
     ID: "1054",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 05:08:18",
     post_date_gmt: "2024-07-01 05:08:18",
     post_content:
@@ -6749,6 +6897,7 @@ export const postdata = [
   {
     ID: "1055",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 05:09:37",
     post_date_gmt: "2024-07-01 05:09:37",
     post_content:
@@ -6775,6 +6924,7 @@ export const postdata = [
   {
     ID: "1056",
     post_author: "1",
+    category: placeData[24],
     post_date: "2024-07-01 05:10:58",
     post_date_gmt: "2024-07-01 05:10:58",
     post_content:
@@ -6801,6 +6951,7 @@ export const postdata = [
   {
     ID: "1057",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-01 05:13:20",
     post_date_gmt: "2024-07-01 05:13:20",
     post_content:
@@ -6828,6 +6979,7 @@ export const postdata = [
   {
     ID: "1058",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-01 05:15:04",
     post_date_gmt: "2024-07-01 05:15:04",
     post_content:
@@ -6854,6 +7006,7 @@ export const postdata = [
   {
     ID: "1059",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-01 05:16:18",
     post_date_gmt: "2024-07-01 05:16:18",
     post_content:
@@ -6881,6 +7034,7 @@ export const postdata = [
   {
     ID: "968",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-03 04:46:06",
     post_date_gmt: "2024-07-03 04:46:06",
     post_content:
@@ -6907,6 +7061,7 @@ export const postdata = [
   {
     ID: "969",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-03 04:47:54",
     post_date_gmt: "2024-07-03 04:47:54",
     post_content:
@@ -6934,6 +7089,7 @@ export const postdata = [
   {
     ID: "970",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-03 04:49:03",
     post_date_gmt: "2024-07-03 04:49:03",
     post_content:
@@ -6960,6 +7116,7 @@ export const postdata = [
   {
     ID: "971",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-03 04:49:47",
     post_date_gmt: "2024-07-03 04:49:47",
     post_content:
@@ -6986,6 +7143,7 @@ export const postdata = [
   {
     ID: "972",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-03 04:50:31",
     post_date_gmt: "2024-07-03 04:50:31",
     post_content:
@@ -7012,6 +7170,7 @@ export const postdata = [
   {
     ID: "973",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-03 04:51:16",
     post_date_gmt: "2024-07-03 04:51:16",
     post_content:
@@ -7039,6 +7198,7 @@ export const postdata = [
   {
     ID: "1060",
     post_author: "1",
+    category: placeData[25],
     post_date: "2024-07-03 05:08:08",
     post_date_gmt: "2024-07-03 05:08:08",
     post_content:
@@ -7066,6 +7226,7 @@ export const postdata = [
   {
     ID: "1061",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:09:18",
     post_date_gmt: "2024-07-03 05:09:18",
     post_content:
@@ -7092,6 +7253,7 @@ export const postdata = [
   {
     ID: "1062",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:10:41",
     post_date_gmt: "2024-07-03 05:10:41",
     post_content:
@@ -7118,6 +7280,7 @@ export const postdata = [
   {
     ID: "1063",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:11:59",
     post_date_gmt: "2024-07-03 05:11:59",
     post_content:
@@ -7145,6 +7308,7 @@ export const postdata = [
   {
     ID: "1064",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:13:20",
     post_date_gmt: "2024-07-03 05:13:20",
     post_content:
@@ -7172,6 +7336,7 @@ export const postdata = [
   {
     ID: "1065",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:14:51",
     post_date_gmt: "2024-07-03 05:14:51",
     post_content:
@@ -7198,6 +7363,7 @@ export const postdata = [
   {
     ID: "1066",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:30:43",
     post_date_gmt: "2024-07-03 05:30:43",
     post_content:
@@ -7224,6 +7390,7 @@ export const postdata = [
   {
     ID: "1067",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:34:58",
     post_date_gmt: "2024-07-03 05:34:58",
     post_content:
@@ -7250,6 +7417,7 @@ export const postdata = [
   {
     ID: "1068",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:36:05",
     post_date_gmt: "2024-07-03 05:36:05",
     post_content:
@@ -7276,6 +7444,7 @@ export const postdata = [
   {
     ID: "1069",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:37:56",
     post_date_gmt: "2024-07-03 05:37:56",
     post_content:
@@ -7303,6 +7472,7 @@ export const postdata = [
   {
     ID: "1070",
     post_author: "1",
+    category: placeData[26],
     post_date: "2024-07-03 05:39:15",
     post_date_gmt: "2024-07-03 05:39:15",
     post_content:
@@ -7330,6 +7500,7 @@ export const postdata = [
   {
     ID: "1071",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-03 05:40:48",
     post_date_gmt: "2024-07-03 05:40:48",
     post_content:
@@ -7356,6 +7527,7 @@ export const postdata = [
   {
     ID: "1072",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-03 05:55:08",
     post_date_gmt: "2024-07-03 05:55:08",
     post_content:
@@ -7382,6 +7554,7 @@ export const postdata = [
   {
     ID: "1073",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-03 05:56:15",
     post_date_gmt: "2024-07-03 05:56:15",
     post_content:
@@ -7408,6 +7581,7 @@ export const postdata = [
   {
     ID: "1074",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-03 05:57:28",
     post_date_gmt: "2024-07-03 05:57:28",
     post_content:
@@ -7434,6 +7608,7 @@ export const postdata = [
   {
     ID: "1076",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-03 05:58:45",
     post_date_gmt: "2024-07-03 05:58:45",
     post_content:
@@ -7461,6 +7636,7 @@ export const postdata = [
   {
     ID: "1077",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-03 05:59:54",
     post_date_gmt: "2024-07-03 05:59:54",
     post_content:
@@ -7488,6 +7664,7 @@ export const postdata = [
   {
     ID: "1078",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-03 06:01:23",
     post_date_gmt: "2024-07-03 06:01:23",
     post_content:
@@ -7514,6 +7691,7 @@ export const postdata = [
   {
     ID: "1080",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-04 05:44:20",
     post_date_gmt: "2024-07-04 05:44:20",
     post_content:
@@ -7540,6 +7718,7 @@ export const postdata = [
   {
     ID: "1081",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-04 05:45:48",
     post_date_gmt: "2024-07-04 05:45:48",
     post_content:
@@ -7566,6 +7745,7 @@ export const postdata = [
   {
     ID: "1082",
     post_author: "1",
+    category: placeData[27],
     post_date: "2024-07-04 05:47:10",
     post_date_gmt: "2024-07-04 05:47:10",
     post_content:
@@ -7593,6 +7773,7 @@ export const postdata = [
   {
     ID: "1083",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 05:48:28",
     post_date_gmt: "2024-07-04 05:48:28",
     post_content:
@@ -7619,6 +7800,7 @@ export const postdata = [
   {
     ID: "1084",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 05:50:08",
     post_date_gmt: "2024-07-04 05:50:08",
     post_content:
@@ -7645,6 +7827,7 @@ export const postdata = [
   {
     ID: "1085",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 05:51:48",
     post_date_gmt: "2024-07-04 05:51:48",
     post_content:
@@ -7671,6 +7854,7 @@ export const postdata = [
   {
     ID: "1086",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 05:53:34",
     post_date_gmt: "2024-07-04 05:53:34",
     post_content:
@@ -7697,6 +7881,7 @@ export const postdata = [
   {
     ID: "1087",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 05:54:59",
     post_date_gmt: "2024-07-04 05:54:59",
     post_content:
@@ -7723,6 +7908,7 @@ export const postdata = [
   {
     ID: "1088",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 05:56:20",
     post_date_gmt: "2024-07-04 05:56:20",
     post_content:
@@ -7749,6 +7935,7 @@ export const postdata = [
   {
     ID: "1089",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 05:57:31",
     post_date_gmt: "2024-07-04 05:57:31",
     post_content:
@@ -7775,6 +7962,7 @@ export const postdata = [
   {
     ID: "1090",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 05:59:02",
     post_date_gmt: "2024-07-04 05:59:02",
     post_content:
@@ -7802,6 +7990,7 @@ export const postdata = [
   {
     ID: "1091",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 06:00:07",
     post_date_gmt: "2024-07-04 06:00:07",
     post_content:
@@ -7828,6 +8017,7 @@ export const postdata = [
   {
     ID: "1092",
     post_author: "1",
+    category: placeData[28],
     post_date: "2024-07-04 06:02:38",
     post_date_gmt: "2024-07-04 06:02:38",
     post_content:
@@ -7854,6 +8044,7 @@ export const postdata = [
   {
     ID: "1093",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:04:02",
     post_date_gmt: "2024-07-04 06:04:02",
     post_content:
@@ -7880,6 +8071,7 @@ export const postdata = [
   {
     ID: "1094",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:05:45",
     post_date_gmt: "2024-07-04 06:05:45",
     post_content:
@@ -7906,6 +8098,7 @@ export const postdata = [
   {
     ID: "1095",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:09:41",
     post_date_gmt: "2024-07-04 06:09:41",
     post_content:
@@ -7933,6 +8126,7 @@ export const postdata = [
   {
     ID: "1096",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:11:52",
     post_date_gmt: "2024-07-04 06:11:52",
     post_content:
@@ -7959,6 +8153,7 @@ export const postdata = [
   {
     ID: "1097",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:13:26",
     post_date_gmt: "2024-07-04 06:13:26",
     post_content:
@@ -7986,6 +8181,7 @@ export const postdata = [
   {
     ID: "1098",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:14:44",
     post_date_gmt: "2024-07-04 06:14:44",
     post_content:
@@ -8013,6 +8209,7 @@ export const postdata = [
   {
     ID: "1099",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:16:25",
     post_date_gmt: "2024-07-04 06:16:25",
     post_content:
@@ -8040,6 +8237,7 @@ export const postdata = [
   {
     ID: "1100",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:17:47",
     post_date_gmt: "2024-07-04 06:17:47",
     post_content:
@@ -8066,6 +8264,7 @@ export const postdata = [
   {
     ID: "1101",
     post_author: "1",
+    category: placeData[29],
     post_date: "2024-07-04 06:18:56",
     post_date_gmt: "2024-07-04 06:18:56",
     post_content:
