@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -51,7 +52,12 @@ const ScrollForm: React.FC = () => {
           onClick={() => setIsCardOpen(true)}
           className="fixed top-[15%] right-0 bg-amber-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-amber-700 flex items-center space-x-2"
         >
-          <img src="/image/mini-Logo.png" alt="Mini Logo" className="w-6 h-6" />
+          <Image 
+          src="/image/mini-Logo.png" 
+          width={200} 
+          height={200} 
+          alt="Mini Logo" 
+          className="w-6 h-6" />
 
           <div>
             <span className="block text-sm font-bold">Calculate</span>
