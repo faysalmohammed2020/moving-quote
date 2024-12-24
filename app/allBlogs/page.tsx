@@ -19,15 +19,14 @@ const BlogAll = () => {
   const [blogData, setBlogData] = useState<any[]>([]);
 
   useEffect(() => {
-    // Perform client-side processing for extracting images
     const processedData = postdata.map((blog) => {
       const imageUrl = extractFirstImage(blog.post_content);
       return {
         ...blog,
-        imageUrl, // Attach the extracted image URL to the blog data
+        imageUrl, 
       };
     });
-    setBlogData(processedData); // Update state with processed blog data
+    setBlogData(processedData); 
   }, []);
 
   return (

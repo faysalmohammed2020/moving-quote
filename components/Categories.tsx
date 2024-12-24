@@ -6,7 +6,7 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { placeData } from "@/app/data/placeData";
-import { postdata } from "@/app/data/postdata"; // Assuming postdata is in a similar data file
+import { postdata } from "@/app/data/postdata"; 
 import Link from "next/link";
 
 const Categories = () => {
@@ -34,7 +34,7 @@ const Categories = () => {
               <div className="mt-4">
                 <strong>Blogs Title:</strong>
                 {postdata
-                  .filter((post) => post.category?.id === item.id) // Nullish check added
+                  .filter((post) => post.category?.id === item.id) 
                   .map((post) => (
                     <div
                       key={post.ID}
