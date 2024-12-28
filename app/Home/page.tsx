@@ -1,4 +1,5 @@
 import BlogSection from "@/components/blog";
+import Categories from "@/components/Categories";
 import HeroSection from "@/components/Hero";
 import ServiceSection from "@/components/service";
 import SubscriptionSection from "@/components/subscription";
@@ -19,6 +20,7 @@ const page = () => {
      <TestimonialsSection/>
      <VideoSection/>
      <SubscriptionSection/>
+     <Categories/>
       
      
     </>

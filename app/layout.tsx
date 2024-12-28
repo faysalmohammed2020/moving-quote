@@ -3,9 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import HeaderMenu from "@/components/Header";
 import Footer from "@/components/Footer";
-import AccordionComponent from "@/components/accordion";
-import Categories from "@/components/Categories";
-import { Zip } from './../components/Zip';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,7 +38,7 @@ export default function RootLayout({
         {children}
         </main>
         <div className="bg-black">
-        <Categories/>
+        
         </div>
         <Footer/>
        </div>
