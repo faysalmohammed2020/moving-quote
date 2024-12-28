@@ -33,7 +33,7 @@ const MovingCalculator: React.FC = () => {
     if (!acceptedTerms)
       newErrors.terms = "You must accept the Terms and Conditions.";
 
-    setErrors(newErrors);
+    setErrors(newErrors); 
 
     if (Object.keys(newErrors).length === 0) {
       alert(
