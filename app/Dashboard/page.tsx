@@ -19,11 +19,12 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="min-h-screen bg-gray-50 p-8">
+
+      <div className="bg-gray-50 p-8">
         {/* Header */}
         <header className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="text-2xl font-semibold">Welcome Back! 👋</h1>
+            <h1 className="text-2xl font-semibold">Welcome Admin! 👋</h1>
             <p className="text-gray-500">Good evening!</p>
           </div>
           <div className="text-gray-500">Today: December 28, 2024</div>
