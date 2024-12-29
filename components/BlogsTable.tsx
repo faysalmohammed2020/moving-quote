@@ -1,18 +1,20 @@
 "use client";
-import { postdata } from '@/app/data/postdata';
-import React, { useState } from 'react';
-import Link from 'next/link';
+import { postdata } from "@/app/data/postdata";
+import React, { useState } from "react";
+import Link from "next/link";
+import { Editor } from "@tinymce/tinymce-react";
+import RichTextEditor from "./RichTextEditor";
 
 const AllBlogs: React.FC = () => {
   const [selectedBlog, setSelectedBlog] = useState(null); // State to manage the blog being edited
   const [formData, setFormData] = useState({
-    post_title: '',
-    post_content: '',
+    post_title: "",
+    post_content: "",
   });
   const [posts, setPosts] = useState(postdata); // Manage posts state to simulate deletion
   const [newPost, setNewPost] = useState({
-    post_title: '',
-    post_content: '',
+    post_title: "",
+    post_content: "",
   });
   const [isModalOpen, setIsModalOpen] = useState(false); // Manage modal visibility
 
@@ -27,16 +29,20 @@ const AllBlogs: React.FC = () => {
 
   const handleDelete = (id: number) => {
     // Show confirmation alert before deleting
-    const confirmDelete = window.confirm('Are you sure you want to delete this blog post?');
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this blog post?"
+    );
     if (confirmDelete) {
       // Filter out the post with the given ID
       const updatedPosts = posts.filter((blog) => blog.ID !== id);
       setPosts(updatedPosts);
-      alert('Blog post deleted successfully!');
+      alert("Blog post deleted successfully!");
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
@@ -44,23 +50,30 @@ const AllBlogs: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission logic here, such as updating the post
-    console.log('Updated Blog:', formData);
+    console.log("Updated Blog:", formData);
     // Reset form
     setSelectedBlog(null);
   };
 
-  const handleNewPostChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleNewPostChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setNewPost((prevState) => ({ ...prevState, [name]: value }));
   };
 
   const handleAddNewPost = (e: React.FormEvent) => {
     e.preventDefault();
-    const newPostData = { ...newPost, ID: posts.length + 1, post_status: 'Draft', comment_status: 'Open' };
+    const newPostData = {
+      ...newPost,
+      ID: posts.length + 1,
+      post_status: "Draft",
+      comment_status: "Open",
+    };
     setPosts([...posts, newPostData]);
-    setNewPost({ post_title: '', post_content: '' }); // Reset form
+    setNewPost({ post_title: "", post_content: "" }); // Reset form
     setIsModalOpen(false); // Close modal after adding post
-    alert('New post added successfully!');
+    alert("New post added successfully!");
   };
 
   return (
@@ -82,11 +95,21 @@ const AllBlogs: React.FC = () => {
         <table className="w-full text-left border-collapse">
           <thead className="bg-gray-100 border-b">
             <tr>
-              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase">ID</th>
-              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase">Title</th>
-              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase">Status</th>
-              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase">Comments</th>
-              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase text-right">Actions</th>
+              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase">
+                ID
+              </th>
+              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase">
+                Title
+              </th>
+              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase">
+                Status
+              </th>
+              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase">
+                Comments
+              </th>
+              <th className="px-6 py-3 text-sm font-medium text-gray-700 uppercase text-right">
+                Actions
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -102,22 +125,24 @@ const AllBlogs: React.FC = () => {
                   <Link href={`/blogs/${blog.ID}`}>{blog.post_title}</Link>
                 </td>
                 <td className="px-6 py-4 text-gray-700">{blog.post_status}</td>
-                <td className="px-6 py-4 text-gray-700">{blog.comment_status}</td>
+                <td className="px-6 py-4 text-gray-700">
+                  {blog.comment_status}
+                </td>
                 <td className="flex px-6 py-4 text-right">
-                <button
-                onClick={() => handleEdit(blog)}
-                className="bg-blue-500 text-white font-medium text-sm py-2 px-4 rounded-lg hover:bg-blue-600 transition-transform transform hover:scale-105 shadow-sm"
-                title="Edit Blog"
-                >
-                Edit
-                </button>
-                <button
-                onClick={() => handleDelete(blog.ID)}
-                className="bg-red-500 text-white font-medium text-sm py-2 px-4 rounded-lg hover:bg-red-600 transition-transform transform hover:scale-105 shadow-sm ml-2"
-                title="Delete Blog"
-                >
-                 Delete
-                 </button>
+                  <button
+                    onClick={() => handleEdit(blog)}
+                    className="bg-blue-500 text-white font-medium text-sm py-2 px-4 rounded-lg hover:bg-blue-600 transition-transform transform hover:scale-105 shadow-sm"
+                    title="Edit Blog"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    onClick={() => handleDelete(blog.ID)}
+                    className="bg-red-500 text-white font-medium text-sm py-2 px-4 rounded-lg hover:bg-red-600 transition-transform transform hover:scale-105 shadow-sm ml-2"
+                    title="Delete Blog"
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             ))}
@@ -129,13 +154,15 @@ const AllBlogs: React.FC = () => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center z-50">
           <div
-            className="bg-white p-6 rounded-lg shadow-md w-1/3"
-            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside form
+            className="bg-white p-6 rounded-lg shadow-md w-2/3"
+            onClick={(e) => e.stopPropagation()}
           >
             <h3 className="text-lg font-medium mb-4">Add New Blog Post</h3>
             <form onSubmit={handleAddNewPost}>
               <div className="mb-4">
-                <label htmlFor="post_title" className="block">Post Title</label>
+                <label htmlFor="post_title" className="block">
+                  Post Title
+                </label>
                 <input
                   type="text"
                   id="post_title"
@@ -147,28 +174,30 @@ const AllBlogs: React.FC = () => {
                 />
               </div>
               <div className="mb-4">
-                <label htmlFor="post_content" className="block">Post Content</label>
-                <textarea
-                  id="post_content"
-                  name="post_content"
+                <label htmlFor="post_content" className="block">
+                  Post Content
+                </label>
+                <RichTextEditor
                   value={newPost.post_content}
-                  onChange={handleNewPostChange}
-                  className="w-full p-2 border rounded"
-                  rows={5}
-                  required
+                  onChange={(content) => {
+                    setNewPost((prev) => ({
+                      ...prev,
+                      post_content: content,
+                    }));
+                  }}
                 />
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between mt-4">
                 <button
                   type="button"
-                  onClick={() => setIsModalOpen(false)} // Close the modal without saving
-                  className="text-gray-500 font-medium"
+                  onClick={() => setIsModalOpen(false)}
+                  className="text-gray-500 font-medium px-4 py-2 rounded hover:bg-gray-100"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="bg-green-500 text-white p-2 rounded hover:bg-green-600"
+                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
                 >
                   Add Post
                 </button>
@@ -182,13 +211,15 @@ const AllBlogs: React.FC = () => {
       {selectedBlog && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center z-50">
           <div
-            className="bg-white p-6 rounded-lg shadow-md w-1/3"
-            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside form
+            className="bg-white p-6 rounded-lg shadow-md w-2/3" // Changed width to match add post modal
+            onClick={(e) => e.stopPropagation()}
           >
             <h3 className="text-lg font-medium mb-4">Edit Blog</h3>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="post_title" className="block">Post Title</label>
+                <label htmlFor="post_title" className="block">
+                  Post Title
+                </label>
                 <input
                   type="text"
                   id="post_title"
@@ -199,27 +230,30 @@ const AllBlogs: React.FC = () => {
                 />
               </div>
               <div className="mb-4">
-                <label htmlFor="post_content" className="block">Post Content</label>
-                <textarea
-                  id="post_content"
-                  name="post_content"
+                <label htmlFor="post_content" className="block">
+                  Post Content
+                </label>
+                <RichTextEditor
                   value={formData.post_content}
-                  onChange={handleChange}
-                  className="w-full p-2 border rounded"
-                  rows={5}
+                  onChange={(content) => {
+                    setFormData((prev) => ({
+                      ...prev,
+                      post_content: content,
+                    }));
+                  }}
                 />
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between mt-4">
                 <button
                   type="button"
-                  onClick={() => setSelectedBlog(null)} // Close the form without saving
-                  className="text-gray-500 font-medium"
+                  onClick={() => setSelectedBlog(null)}
+                  className="text-gray-500 font-medium px-4 py-2 rounded hover:bg-gray-100"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="bg-blue-500 text-white p-2 rounded"
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                 >
                   Save Changes
                 </button>
