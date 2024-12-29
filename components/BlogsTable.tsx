@@ -17,6 +17,7 @@ const AllBlogs: React.FC = () => {
     post_content: "",
   });
   const [isModalOpen, setIsModalOpen] = useState(false); // Manage modal visibility
+  const [searchQuery, setSearchQuery] = useState(""); // State for search query
 
   const handleEdit = (blog: any) => {
     // Set the blog being edited and populate the form
@@ -76,18 +77,34 @@ const AllBlogs: React.FC = () => {
     alert("New post added successfully!");
   };
 
+  const filteredPosts = posts.filter((post) =>
+    post.post_title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="p-8">
-      <h1 className="text-2xl font-bold">Blog Management: {posts.length}</h1>
+      <h1 className="text-2xl font-bold">Blog Management: {filteredPosts.length}</h1>
+
 
       {/* Aligning Add New Post Button to the Left */}
       <div className="flex justify-end mb-6">
+      <div>
+      <input
+          type="text"
+          placeholder="Search blogs by title..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-auto mt-8 p-2 mr-4 border rounded"
+        />
+      </div>
+        <div className="mt-8">
         <button
           onClick={() => setIsModalOpen(true)}
           className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
         >
           Add New Post
         </button>
+        </div>
       </div>
 
       {/* Table of Existing Posts */}
@@ -113,7 +130,7 @@ const AllBlogs: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {posts.map((blog, index) => (
+            {filteredPosts.map((blog, index) => (
               <tr
                 key={index}
                 className={`${

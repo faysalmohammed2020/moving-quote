@@ -74,12 +74,6 @@ const Dashboard = () => {
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-lg font-medium">Recent Blogs</h3>
-                <button
-                  onClick={() => openForm()}
-                  className="text-blue-500 text-sm font-medium"
-                >
-                  + Add New
-                </button>
               </div>
               <BlogList openForm={openForm} />
             </div>
@@ -142,12 +136,6 @@ const BlogList: React.FC<{ openForm: (blog: any) => void }> = ({ openForm }) => 
             <p className="text-sm text-gray-500">
               {blog.post_status} Comments • {blog.comment_status} Views
             </p>
-          </div>
-          <div className="flex flex-col items-end">
-            <button className="text-blue-500 text-sm mb-1" onClick={() => openForm(blog)}>
-              Edit
-            </button>
-            <button className="text-red-500 text-sm">Delete</button>
           </div>
         </li>
       ))}
