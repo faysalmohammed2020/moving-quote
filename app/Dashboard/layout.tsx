@@ -1,6 +1,6 @@
 import Sidebar from '@/components/SideBar';
 import React, { ReactNode } from 'react';
-import clamp from './../../node_modules/lodash-es/clamp';
+
 
 interface LayoutProps {
   children: ReactNode;

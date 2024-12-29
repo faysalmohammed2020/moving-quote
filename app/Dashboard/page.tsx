@@ -6,20 +6,22 @@ import BlogPostForm from "@/components/blogForm";
 
 const Dashboard = () => {
   const [isFormVisible, setFormVisible] = useState(false); // State to toggle the form visibility
+  const [selectedBlog, setSelectedBlog] = useState(null); // State for the blog being edited
 
   // Function to open the form modal
-  const openForm = () => {
+  const openForm = (blog = null) => {
+    setSelectedBlog(blog);
     setFormVisible(true);
   };
 
   // Function to close the form modal
   const closeForm = () => {
     setFormVisible(false);
+    setSelectedBlog(null);
   };
 
   return (
     <>
-
       <div className="bg-gray-50 p-8">
         {/* Header */}
         <header className="flex justify-between items-center mb-8">
@@ -73,19 +75,19 @@ const Dashboard = () => {
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-lg font-medium">Recent Blogs</h3>
                 <button
-                  onClick={openForm}
+                  onClick={() => openForm()}
                   className="text-blue-500 text-sm font-medium"
                 >
                   + Add New
                 </button>
               </div>
-              <BlogList />
+              <BlogList openForm={openForm} />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Modal for adding new blog post */}
+      {/* Modal for adding new or editing a blog post */}
       {isFormVisible && (
         <div
           className="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center z-50"
@@ -96,7 +98,7 @@ const Dashboard = () => {
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
           >
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg font-medium">Create a New Blog</h3>
+              <h3 className="text-lg font-medium">{selectedBlog ? "Edit Blog" : "Create a New Blog"}</h3>
               <button
                 onClick={closeForm}
                 className="text-red-500 text-xl font-semibold"
@@ -104,7 +106,7 @@ const Dashboard = () => {
                 &times;
               </button>
             </div>
-            <BlogPostForm />
+            <BlogPostForm blog={selectedBlog} closeForm={closeForm} />
           </div>
         </div>
       )}
@@ -128,11 +130,11 @@ const StatCard: React.FC<{ title: string; value: string | number; icon: React.Re
 );
 
 // Blog List Component
-const BlogList = () => {
+const BlogList: React.FC<{ openForm: (blog: any) => void }> = ({ openForm }) => {
   const blogs = postdata.slice(0, 8);
 
   return (
-    <ul className="divide-y divide-gray-200">
+    <ul className="scrollbar max-h-[250px] divide-y divide-gray-200 overflow-y-auto">
       {blogs.map((blog, index) => (
         <li key={index} className="py-4 flex justify-between items-center">
           <div>
@@ -141,7 +143,12 @@ const BlogList = () => {
               {blog.post_status} Comments • {blog.comment_status} Views
             </p>
           </div>
-          <button className="text-blue-500 text-sm">Edit</button>
+          <div className="flex flex-col items-end">
+            <button className="text-blue-500 text-sm mb-1" onClick={() => openForm(blog)}>
+              Edit
+            </button>
+            <button className="text-red-500 text-sm">Delete</button>
+          </div>
         </li>
       ))}
     </ul>
